@@ -1,3 +1,8 @@
-<p>Name</p>
-<img src="" alt="">
-<p>Likes:</p>
+<section>
+    @for(item of posts; track item.name){
+    <h2>{{item.name}}</h2>
+
+    <img style="width: 300px;" [src]="item.img" alt="">
+    <p>Likes:{{item.likes}}</p>
+    }
+</section>
