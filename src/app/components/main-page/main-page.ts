@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PostInterface } from '../../interfaces/post-interface';
 
 @Component({
   selector: 'app-main-page',
@@ -8,22 +9,18 @@ import { Component } from '@angular/core';
 })
 export class MainPage {
 
-  posts = [
-    {name:"",
-      img:"",
+  posts: PostInterface[] = [
+    {name:"Waterfall",
+      img:"like-insta/src/assets/img/01.png",
       likes:6
     },
-    {name:"",
-      img:"",
+    {name:"Dunes",
+      img:"like-insta/src/assets/img/02.png",
       likes:14
     },
-    {name:"",
-      img:"",
+    {name:"Sunrise",
+      img:"like-insta/src/assets/img/03.png",
       likes:3
-    },
-    {name:"",
-      img:"",
-      likes:9
-    },
+    }
   ]
 }
