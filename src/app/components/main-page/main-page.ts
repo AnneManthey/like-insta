@@ -11,15 +11,15 @@ export class MainPage {
 
   posts: PostInterface[] = [
     {name:"Waterfall",
-      img:"like-insta/src/assets/img/01.png",
+      img:"assets/img/01.png",
       likes:6
     },
     {name:"Dunes",
-      img:"like-insta/src/assets/img/02.png",
+      img:"assets/img/02.png",
       likes:14
     },
     {name:"Sunrise",
-      img:"like-insta/src/assets/img/03.png",
+      img:"assets/img/03.png",
       likes:3
     }
   ]
