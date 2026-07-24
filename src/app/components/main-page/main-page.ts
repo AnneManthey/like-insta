@@ -9,6 +9,8 @@ import { PostInterface } from '../../interfaces/post-interface';
 })
 export class MainPage {
 
+  isLiked:boolean = false;
+
   posts: PostInterface[] = [
     {name:"Waterfall",
       img:"assets/img/01.png",
@@ -23,4 +25,17 @@ export class MainPage {
       likes:3
     }
   ]
+
+  switchLike(index: number){
+    if (this.isLiked == false){
+      this.isLiked = true;
+      this.posts[index].likes ++;
+    }
+    else{
+      this.isLiked = false;
+      this.posts[index].likes --;
+    }
+  }
+
+
 }
