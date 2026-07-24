@@ -1,10 +1,12 @@
+<h1>Pretty Pictures!</h1>
+<button routerLink="/contact">Contact</button>
 <section>
     @for(item of posts; track item.name){
     <h2>{{item.name}}</h2>
     <img style="width: 350px;" [src]="item.img" alt="">
 
     <p>Likes:{{item.likes}}</p>
-    <button (click)="switchLike($index)">@if(isLiked==false){<img src="\assets\img\like_outline.svg" alt="heart">}@else{<img src="\assets\img\like_filled.svg" alt="heart">}</button>
+    <button class="button-img" (click)="switchLike($index)">@if(isLiked==false){<img src="\assets\img\like_outline.svg" alt="heart">}@else{<img src="\assets\img\like_filled.svg" alt="heart">}</button>
 
     }
 </section>
