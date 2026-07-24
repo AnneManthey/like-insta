@@ -18,32 +18,31 @@ export class MainPage {
       name: "Waterfall",
       img: "assets/img/01.png",
       likes: 6,
-      liked: false
+      isLiked: false
     },
     {
       name: "Dunes",
       img: "assets/img/02.png",
       likes: 14,
-      liked: false
+      isLiked: false
     },
     {
       name: "Sunrise",
       img: "assets/img/03.png",
       likes: 3,
-      liked: false
+      isLiked: false
     }
   ]
 
   switchLike(index: number) {
-    if (this.posts[index].liked == false) {
-      this.posts[index].liked = true;
+    if (this.posts[index].isLiked == false) {
+      this.posts[index].isLiked = true;
       this.posts[index].likes++;
     }
     else {
-      this.posts[index].liked = false;
+      this.posts[index].isLiked = false;
       this.posts[index].likes--;
     }
   }
-
 
 }

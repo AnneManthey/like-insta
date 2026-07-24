@@ -7,7 +7,7 @@
 
     <p>Likes:{{item.likes}}</p>
     <button class="button-img" (click)="switchLike($index)">
-        <img [src]="item.liked ? heartFilled : heartOutline" alt="heart">
+        <img [src]="item.isLiked ? heartFilled : heartOutline" alt="heart">
     </button>
 
     }
